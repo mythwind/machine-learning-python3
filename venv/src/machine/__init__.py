@@ -1,1 +1,1 @@
-import machine.constants as constants
+import machine.constants as consts

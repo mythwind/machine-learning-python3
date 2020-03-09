@@ -48,7 +48,7 @@ def file2matrix(filename) :
     fr = open(filename)
     array_lines = fr.readlines()
     number_of_lines = len(array_lines)
-    return_mat = zeros((number_of_lines, 3)) ##创建矩阵
+    return_mat = np.zeros((number_of_lines, 3)) ##创建矩阵
     class_label_vector = []
     index = 0
     for line in array_lines :
@@ -68,10 +68,10 @@ def auto_normal(dataset) :
     min_value = dataset.min(0)  #从列中选取最小值，而不是选取当前行的最小值
     max_value = dataset.max(0)
     ranges = max_value - min_value
-    normal_dataset = zeros(shape(dataset))
+    normal_dataset = np.zeros(np.shape(dataset))
     m = dataset.shape[0]
-    normal_dataset = dataset - tile(min_value, (m,1))
-    normal_dataset = normal_dataset / tile(ranges, (m,1))
+    normal_dataset = dataset - np.tile(min_value, (m,1))
+    normal_dataset = normal_dataset / np.tile(ranges, (m,1))
     return normal_dataset, ranges, min_value
 
 '''
@@ -80,13 +80,13 @@ def auto_normal(dataset) :
 def show_plt(data_mat,data_labels) :
     fig = plt.figure()
     ax = fig.add_subplot(111)
-    ax.scatter(data_mat[:,1],data_mat[:,2],15.0*array(data_labels),15.0*array(data_labels))
+    ax.scatter(data_mat[:,1],data_mat[:,2],15.0*np.array(data_labels),15.0*np.array(data_labels))
     plt.show()
 
 
 def img2vector(filename) :
     ## zeros 产生一个1行1024列的数组0矩阵
-    return_vect = zeros((1,1024))
+    return_vect = np.zeros((1,1024))
     fr = open(filename)
     for i in range(32) :    # 读取文件的前32行
         linestr = fr.readline()

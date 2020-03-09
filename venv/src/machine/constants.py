@@ -35,3 +35,25 @@ constants.DIR_BAYES_HAM_PATH = 'assets/ham'
 constants.FILE_LOGISTIC_DATA_PATH = 'assets/testSet.txt'
 constants.FILE_LOGISTIC_HORSE_TEST_PATH = 'assets/horseColicTest.txt'
 constants.FILE_LOGISTIC_HORSE_TRAINING_PATH = 'assets/horseColicTraining.txt'
+constants.FILE_SVM_DATA_PATH = 'assets/testSet.txt'
+constants.FILE_ADABOOST_TEST_PATH = 'assets/horseColicTest2.txt'
+constants.FILE_ADABOOST_TRAIN_PATH = 'assets/horseColicTraining2.txt'
+constants.FILE_ADABOOST_TRAIN_PATH = 'assets/horseColicTraining2.txt'
+constants.FILE_REGRESSION_0_PATH = 'assets/ex0.txt'
+constants.FILE_REGRESSION_1_PATH = 'assets/ex1.txt'
+constants.FILE_REGRESSION_ABALONE_PATH = 'assets/abalone.txt'
+constants.FILE_TREE_EX00_PATH = 'assets/ex00.txt'
+constants.FILE_TREE_EX0_PATH = 'assets/ex0.txt'
+constants.FILE_TREE_EX2_PATH = 'assets/ex2.txt'
+constants.FILE_TREE_EX2TEST_PATH = 'assets/ex2test.txt'
+constants.FILE_TREE_EXP2_PATH = 'assets/exp2.txt'
+constants.FILE_TREE_BIKE_TEST_PATH = 'assets/bikeSpeedVsIq_test.txt'
+constants.FILE_TREE_BIKE_TRAIN_PATH = 'assets/bikeSpeedVsIq_train.txt'
+constants.FILE_KMEAN_TEST1_PATH = 'assets/testSet.txt'
+constants.FILE_KMEAN_TEST2_PATH = 'assets/testSet2.txt'
+
+constants.FILE_FPGROUTH_DATA_PATH = 'assets/kosarak.dat'
+
+
+
+
